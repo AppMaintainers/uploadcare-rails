@@ -9,7 +9,7 @@ module Uploadcare
       # point here to store them in one place and one place only
 
       # settings validation (hey, why not? we already have all rails stack loaded :)
-      # so just use the godnes of rails magic and praise the lord!
+      # so just use the goodness of rails magic and praise the lord!
       validates :public_key, :presence => true
       validates :private_key, :presence => true
 
@@ -31,7 +31,7 @@ module Uploadcare
       ]
 
       def initialize config
-        # extract envaroments settings
+        # extract enviroments settings
         settings = config["#{::Rails.env}"]
         raise ArgumentError.new "config is empty or not given at all" unless settings.present?
 
